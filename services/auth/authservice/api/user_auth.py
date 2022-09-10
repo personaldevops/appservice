@@ -1,9 +1,10 @@
 from appservicecore.api_service import app
 from fastapi import Response
-from SO.mongo_abstractions.mongo_query_builder import MongoQueryBuilder
-from SO.mongo_abstractions.operations import MongoColumn, MongoFilter, MongoFindFilter, MongoUpdateFilter
-from SO.enums.mongo import MongoPredicates, MongoActions, MongoColumnSelection, MongoSortOrder
+from abstractions.mongo_abstractions.mongo_query_builder import MongoQueryBuilder
+from abstractions.mongo_abstractions.operations import MongoColumn, MongoFilter, MongoFindFilter, MongoUpdateFilter
+from abstractions.enums.mongo import MongoPredicates, MongoActions, MongoColumnSelection, MongoSortOrder
 from pydantic import BaseModel
+
 
 
 class UserSignUp(BaseModel):
